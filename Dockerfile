@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM fnndsc/ubuntu-python3:20.04
 ADD . /code
 WORKDIR /code
 RUN pip install -r requirements.txt

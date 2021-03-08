@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: http-service
+spec:
+  ports:
+  - name: http
+    port: 8888
+    targetPort: 8888
+  selector:
+    app: ub-app
+
